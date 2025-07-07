@@ -136,4 +136,7 @@ body {
         .profile_wrapper{
             display: unset !important;
         }
+        .social-media-icons{
+            padding-top: 1.5rem;
+        }
  }
