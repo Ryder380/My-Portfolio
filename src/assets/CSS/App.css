@@ -133,4 +133,7 @@ body {
         .occupation{
             font-size: 2rem;
         }
+        .profile_wrapper{
+            display: unset !important;
+        }
  }

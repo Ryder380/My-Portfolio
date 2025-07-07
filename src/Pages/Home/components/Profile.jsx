@@ -9,7 +9,7 @@ function Profile() {
         <div className="container-fluid inner_profile_container">
           <div className="row justify-content-center">
             <div className="col-md-6">
-              <div className="h-100 d-flex align-items-center justify-content-center">
+              <div className="profile_wrapper h-100 d-flex align-items-center justify-content-center">
                 <div>
                   <div className="profile_name-wrapper">
                     <p className="profile_name mb-0 text-white">
