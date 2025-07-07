@@ -126,3 +126,11 @@ body {
       transform: rotate(360deg);
     }
   }
+ @media (max-width:639px) {
+        .profile_name{
+            font-size: 3.2rem;
+        }
+        .occupation{
+            font-size: 2rem;
+        }
+ }
