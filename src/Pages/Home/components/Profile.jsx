@@ -58,7 +58,7 @@ function Profile() {
                 </a>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 d-none d-md-block">
               <img
                 src="Images/person1.png"
                 className="w-100 h-100 profile_image"
