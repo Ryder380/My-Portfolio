@@ -7,45 +7,45 @@ import { UserContext } from "../Context/UserContext";
 
 
 function index() {
-  // const [UserData, setUserData] = useState();
-  // const [showLoading, setShowLoading] = useState(true);
+  const [UserData, setUserData] = useState();
+  const [showLoading, setShowLoading] = useState(true);
 
  
   // const username = "Ryder380";
 
-  // useEffect(() => {
-  //   axios
-  //     .get(`https://api.github.com/users/${username}`, {
+  useEffect(() => {
+    axios
+      .get(`https://jsonplaceholder.typicode.com/todos/1`, {
         
-  //     })
-  //     .then((response) => {
-  //       // console.log(response.data);
-  //       setUserData(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error", error);
-  //     });
-  // }, []);
+      })
+      .then((response) => {
+        // console.log(response.data);
+        setUserData(response.data);
+      })
+      .catch((error) => {
+        console.error("Error", error);
+      });
+  }, []);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     if (UserData) {
-  //       setShowLoading(false);
-  //     }
-  //   }, 1900);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (UserData) {
+        setShowLoading(false);
+      }
+    }, 1000);
 
-  //   return () => clearTimeout(timer);
-  // }, [UserData]);
+    return () => clearTimeout(timer);
+  }, [UserData]);
 
-  // if (showLoading) {
-  //   return (
-  //     <div className="loading bg-black">
-  //       <div>
-  //         <img className="loader" src="Images/loader.gif" alt="" />
-  //       </div>
-  //     </div>
-  //   );
-  // }
+  if (showLoading) {
+    return (
+      <div className="loading bg-black">
+        <div>
+          <img className="loader" src="Images/loader.gif" alt="" />
+        </div>
+      </div>
+    );
+  }
   return (
     <UserContext.Provider>
     <div>
