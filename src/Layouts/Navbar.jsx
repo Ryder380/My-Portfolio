@@ -10,7 +10,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg fixed-top" id="navbar-example2">
       <div className="container-fluid mx-lg-5">
         <p className="navbar-brand text-white fw-bold fs-4 pb-0 mb-0">
-          Kalindu.
+          Kalindu. 
         </p>
         <button
           className="navbar-toggler"
@@ -21,7 +21,9 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon d-flex align-items-center justify-content-center">
+             <i className="fas fa-bars text-white" ></i>
+          </span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="nav nav-pills">
