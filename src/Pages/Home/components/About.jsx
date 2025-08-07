@@ -7,7 +7,7 @@ function About() {
       <div className="container-fluid about_container">
               <div className="container-fluid inner_profile_container">
                 <div className="text-center">
-              asdas
+              asdasxXx
                 </div>
               </div>
             </div>

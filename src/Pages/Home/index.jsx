@@ -2,15 +2,17 @@ import React, { useEffect, useState } from "react";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import axios from "axios";
-import { useContext } from "react";
-import { UserContext } from "../../Context/UserContext";
+
+import { gsap } from "gsap";
+
+
 
 
 function index() {
-  const user = useContext(UserContext);
+  
+  
 
   return (
-    
     <>
       <div
         data-bs-spy="scroll"
@@ -21,16 +23,12 @@ function index() {
         tabIndex="0"
       >
         <div id="scrollspyHeading1">
-
-         <Profile user={user} />
+          <Profile />
         </div>
         <div id="scrollspyHeading2">
-
-         <About  />
+          <About />
         </div>
-       
       </div>
-     
     </>
   );
 }

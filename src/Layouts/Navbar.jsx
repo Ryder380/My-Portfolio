@@ -3,11 +3,11 @@ import React from "react";
 function Navbar() {
   
   const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-    target: "#navbar-example2",
+    target: "#navbar-example",
   });
 
   return (
-    <nav className="navbar navbar-expand-lg fixed-top" id="navbar-example2">
+    <nav className="navbar navbar-expand-lg fixed-top" id="navbar-example">
       <div className="container-fluid mx-lg-5">
         <p className="navbar-brand text-white fw-bold fs-4 pb-0 mb-0">
           Kalindu. 

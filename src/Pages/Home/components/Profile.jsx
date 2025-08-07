@@ -1,7 +1,25 @@
 
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
+import { useEffect } from "react";
+
 import { Typewriter } from "react-simple-typewriter";
 
 function Profile() {
+  useEffect(() => {
+    gsap.registerPlugin(SplitText);
+
+gsap.set("#heading", { opacity: 1 });
+
+let split = SplitText.create("#heading", { type: "chars" });
+//now animate each character into place from 20px below, fading in:
+gsap.from(split.chars, {
+  y: 20,
+  x:20,
+  autoAlpha: 0,
+  stagger: 0.05
+});
+  })
   
   return (
     <>
@@ -12,9 +30,9 @@ function Profile() {
               <div className="profile_wrapper h-100 d-flex align-items-center justify-content-center">
                 <div>
                   <div className="profile_name-wrapper">
-                    <p className="profile_name mb-0 text-white">
+                    <h1 className="profile_name mb-0 text-white" id="heading">
                       Hi, I'm Kalindu Gayanjith 
-                    </p>
+                    </h1>
                   </div>
                   <div className="occupation-wrapper">
                     <p className="occupation mb-0">
@@ -68,6 +86,7 @@ function Profile() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }

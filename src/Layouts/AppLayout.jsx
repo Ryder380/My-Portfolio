@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
 import axios from "axios";
-import { UserContext } from "../Context/UserContext";
+// import { UserContext } from "../Context/UserContext";
 
 
 function index() {
@@ -47,7 +47,7 @@ function index() {
     );
   }
   return (
-    <UserContext.Provider>
+    // <UserContext.Provider>
     <div>
       
       <Navbar />
@@ -57,7 +57,7 @@ function index() {
       {/* <Footer /> */}
       
     </div>
-     </UserContext.Provider>
+    //  </UserContext.Provider>
   );
 }
 

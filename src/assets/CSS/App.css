@@ -19,7 +19,7 @@ body {
 }
 
 .profile_name {
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: 600;
 }
 
@@ -86,6 +86,9 @@ body {
     color: #fff !important;
     border-color: #fff !important;
    
+}
+#heading{
+    opacity: 0;
 }
 .navbar{
     background-color: transparent !important;
